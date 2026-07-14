@@ -1,0 +1,28 @@
+# Credentials — never commit
+.env
+
+# macOS
+.DS_Store
+
+# Dependencies — installed on server via composer/npm
+vendor/
+node_modules/
+
+# Dev-only tools
+screenshot.mjs
+serve.mjs
+package.json
+package-lock.json
+temporary screenshots/
+email_preview_review.php
+
+# Claude AI files — not needed on server
+.claude/
+CLAUDE.md
+Gadget Shop Prompt.pdf
+
+# Uploaded files — transfer separately; keep directory structure via .gitkeep
+uploads/**
+!uploads/.gitkeep
+!uploads/picture_proof/
+!uploads/picture_proof/.gitkeep

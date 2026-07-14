@@ -1,0 +1,5 @@
+# Block direct access to sensitive files
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
